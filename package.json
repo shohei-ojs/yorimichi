@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "web": "pnpm --filter web run dev",
+    "api": "cd apps/api && go run main.go",
+    "db:start": "gcloud sql instances patch yorimichi-db --activation-policy ALWAYS",
+    "db:stop": "gcloud sql instances patch yorimichi-db --activation-policy NEVER"
   },
   "keywords": [],
   "author": "",
