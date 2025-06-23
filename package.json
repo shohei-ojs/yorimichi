@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "web": "pnpm --filter web run dev",
+    "web": "pnpm --filter web dev --hostname 0.0.0.0",
     "api": "cd apps/api && go run main.go",
     "db:start": "gcloud sql instances patch yorimichi-db --activation-policy ALWAYS",
     "db:stop": "gcloud sql instances patch yorimichi-db --activation-policy NEVER"

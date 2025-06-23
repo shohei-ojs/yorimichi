@@ -16,7 +16,7 @@ func main() {
 
 	e := echo.New()
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
-		AllowOrigins: []string{"http://localhost:3000"}, // frontend URL
+		AllowOrigins: []string{"http://localhost:3000", "http://192.168.0.113:3000"}, // frontend URL
 		AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
 	}))
 

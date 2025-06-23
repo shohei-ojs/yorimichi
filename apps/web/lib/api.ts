@@ -1,7 +1,7 @@
 import type { Shop } from '@yorimichi/types'; // 先ほど作成した共有の型をインポート
 
 // GoのAPIサーバーのURL。後で本番環境用に変更しやすくするため、定数にしておく。
-const API_BASE_URL = 'http://localhost:8080';
+const API_BASE_URL = 'http://192.168.0.113:8080';
 
 /**
  * お店の一覧を取得する関数
