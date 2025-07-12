@@ -21,7 +21,6 @@ func (h *ShopHandler) ListShops(c echo.Context) error {
 		return c.JSON(http.StatusInternalServerError, map[string]string{"error": "Failed to fetch shops"})
 	}
 
-	// もしお店が一件もなくても、エラーではなく空の配列を返す
 	if shops == nil {
 		shops = []models.Shop{}
 	}
